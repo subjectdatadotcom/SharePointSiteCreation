@@ -26,7 +26,7 @@ All processed site details are exported to a report (`report_output.csv`) for au
 SubjectData
 
 .EXAMPLE
-.\Migrate-SPOSites.ps1
+.\SharePointSiteCreation.ps1
 This will connect to the target tenant and process all entries in 'source_sites.csv', creating the corresponding sites if they do not already exist, and saving results to 'report_output.csv'.
 #>
 

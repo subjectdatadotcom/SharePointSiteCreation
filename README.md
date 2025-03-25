@@ -52,3 +52,15 @@ $sourceHostName  = "source.sharepoint.com"
 $targetHostName  = "target.sharepoint.com"
 $PreFix          = "MIG_"
 ```
+# Troubleshooting
+## 🧰 Troubleshooting
+
+| **Issue**                          | **Solution**                                                                 |
+|-----------------------------------|------------------------------------------------------------------------------|
+| Error creating site               | Check if the site already exists, or validate the site type.                |
+| CSV not processed                 | Ensure headers match exactly: `Site Display Name`, `Site URL`, `Site Type`. |
+| PnP.PowerShell not installing     | Run `Install-Module -Name PnP.PowerShell -Scope CurrentUser -Force` manually. |
+| Site not created with correct URL | Check your `$sourceHostName`, `$targetHostName`, and `$PreFix` values.      |
+| Permissions error                 | Ensure you're logging in with an admin account. |
+
+
